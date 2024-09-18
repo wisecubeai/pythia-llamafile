@@ -6,18 +6,18 @@ Run your own OpenAI API locally. Tested to work on Mac OS X & Linux.
   - clone this repository
   - build the image
 ```
-docker build -t pythia-llamafile .
+./build.sh
 ```
 
 :eyes: ***run***:
 ```
-docker run -d -p 8080:8080 pythia-llamafile
+./run.sh
 ```
 :eyes: ***UI Test***:  
   - go to http://127.0.0.1:8080
   - say 'hello'! 
 
-:eyes: ***API Client***:  
-  - set base_url="http://localhost:8080/v1"
-  - run your existing OpenAI client 
-
+:eyes: ***API Test***:  
+```
+python -m client
+```
