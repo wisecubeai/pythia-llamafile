@@ -1,8 +1,8 @@
 # Use debian trixie for gcc13
 FROM debian:trixie as builder
 
-ARG MODEL_URL=TheBloke/Mistral-7B-v0.1-GGUF 
-ARG MODEL_FILE=mistral-7b-v0.1.Q4_K_M.gguf
+ARG MODEL_URL
+ARG MODEL_FILE
 
 # Set work directory
 WORKDIR /download
